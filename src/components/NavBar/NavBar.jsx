@@ -19,7 +19,7 @@ const NavBar = () => {
 
     return (
         <nav className="text-black bg-yellow-100 p-6">
-            <div className="text-4xl " md:hidden onClick={()=>setOpen(!open)}>
+            <div className="text-4xl md:hidden "  onClick={()=>setOpen(!open)}>
                 {
                     open === true ? <IoClose ></IoClose> :  <IoMdMenu ></IoMdMenu>
                 }

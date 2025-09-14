@@ -1,9 +1,9 @@
-import PriceOption from "../PriceOption/PriceOption";
+import PriceOption from "../components/PriceOption/PriceOption";
 
 
-const priceOptions = () => {
+const PriceOptions = () => {
 
-[
+const options=[
   {
     "id": 1,
     "name": "Basic Monthly",
@@ -63,16 +63,14 @@ const priceOptions = () => {
 ]
 
 
-
     return (
         <div>
-             <h2 className="text-5xl">Best Prices</h2>
-
-             {
-              priceOptions.map(option => <PriceOption key={option.id} option={option}></PriceOption>)
-             }
+            <h2 className="text-5xl">Best Prices</h2>
+          {
+            options.map((option,index)=> <PriceOption option={option} key={index}/>)
+          }
         </div>
     );
 };
 
-export default priceOptions;
+export default PriceOptions;
