@@ -13,8 +13,8 @@ const PriceOption = ({ option }) => {
 
             <div className="pl-6 flex-grow">
                 {
-                    option.features.map((feature, index) =>
-                        <Feature feature={feature} kay={index}></Feature>)
+                    option.features.map((feature, idx) =>
+                        <Feature feature={feature} kay={idx}></Feature>)
                 }
             </div>
             <div className="  text-center ">
